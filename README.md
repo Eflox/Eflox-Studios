@@ -30,4 +30,9 @@ Search the HTML for `PLACEHOLDER` to find each spot.
 
 ## Deploy
 
-Any static host works: GitHub Pages, Netlify, Cloudflare Pages, Vercel, or your own server. `preview.bat` and `README.md` are only for you and can be left out of the upload.
+Hosted on GitHub Pages from the `main` branch of [Eflox/Eflox-Studios](https://github.com/Eflox/Eflox-Studios), served at https://efloxstudios.com. Push to `main` and the site updates within a minute or two.
+
+- `CNAME` holds the custom domain. Don't delete it, or Pages drops the domain.
+- `.nojekyll` makes Pages serve the files as-is.
+- DNS is at GoDaddy: four `A` records on `@` (185.199.108.153, .109, .110, .111) and `www` CNAME to `eflox.github.io`. The Microsoft 365 email records sit alongside them; leave those alone.
+- `Images/` is git-ignored, so files there stay local.
